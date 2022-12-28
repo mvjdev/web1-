@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    animation:backgroundcolor 5s infinite;
+}
+@keyframes backgroundcolor {
+    0%{
+        background-color:#e0c3fc; 
+        left: auto;
+    }
+    50%{
+        background-color:#8ec5fc ;
+        right: auto;
+    }
+    100%{
+        background-color: #e0c3fc;
+        right: auto;
+    }
+}
+
+#formulaire{
+border: 2px solid whitesmoke !important;
+width: max-content;
+height: fit-content;
+margin: 10%;
+margin-left: 30%;
+background-color:whitesmoke !important;
+padding: 1%;
+border-radius: 20px;
+box-shadow: #8ec5fc;
+position: fixed;
+
+}
+#user{
+    margin-left: 8rem;
+    border-radius: 50%;
+}
+#email,#password{
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 0.001rem solid rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(500,500,400)!important;
+    box-shadow:2px 2px 2px 2px rgba(211, 208, 208, 0.343) !important;
+    margin-bottom: 1rem;
+}
+
+#email_manquant{
+    margin: 20%;
+    background-color: whitesmoke !important;
+    color: red;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#inputbutton{
+margin-top: 1.6rem;
+    padding: 0.5rem 9rem 0.5rem 9rem ;
+    border: 0.0001rem solid #809ef1e5;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #809ef1e5!important;
+    color: #fff;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+bottom: 1rem;
+
+}
+#inputbutton:hover{
+transform: scale(1.05);
+}
+
+
+.stage,.snippet{
+    margin-top: 1.5rem;
+    padding: 1rem 10rem 1rem 10rem ;
+    font-size: 20px;
+    background-color: #809ef1e5!important;
+    border-radius: 30px;
+    position: absolute;
+    display: none;
+
+}
+
+
+.dot-flashing {
+ position: relative;
+ width: 10px;
+ height: 10px;
+ border-radius: 5px;
+ color: #fff;
+ animation: dot-flashing 1s infinite linear alternate;
+ animation-delay: 0.5s;
+}
+.dot-flashing::before, .dot-flashing::after {
+ content: "";
+ display: inline-block;
+ position: absolute;
+ top: 0;
+}
+.dot-flashing::before {
+ left: -15px;
+ width: 10px;
+ height: 10px;
+ border-radius: 5px;
+ background-color: rgb(246, 242, 242);
+ color: rgb(246, 242, 242);
+ animation: dot-flashing 1s infinite alternate;
+ animation-delay: 0s;
+}
+.dot-flashing::after {
+ left: 15px;
+ width: 10px;
+ height: 10px;
+ border-radius: 5px;
+ background-color: rgb(246, 242, 242);
+ color: rgb(246, 242, 242);
+ animation: dot-flashing 1s infinite alternate;
+ animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+ 0% {
+    display:hidden;
+   background-color: #fff;
+ }
+ 50%, 100% {
+   background-color: rgba(173, 150, 150,0.5);
+ }
+}
+
+
+
+/*
+.submit-button {
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0;
+    line-height: normal;
+    border-radius: 3px;
+}
+.submit-button:hover,
+.submit-button:focus {
+    background: blue;
+}
+
+    .submit-button.is-loading{
+        opacity: 0;
+    }
+
+    .submit-button__loader-base {
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        animation-fill-mode: both;
+        animation:1.5 infinite linear;
+    }
+    */
+
+
+#forgotpass{
+    margin-left: 12rem;
+    margin-top: -3.11rem;
+}
+#signup,#forgotpass{
+    margin-bottom: 2rem;
+    background-color: whitesmoke !important;
+    color: black !important;
+}
+a{
+    text-decoration: none;
+}

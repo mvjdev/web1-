@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="formulaire.css">
+    <script src="formulaire.js" defer></script>
+</head>
+<body>
+    <form method="post" name="myForm" action="/file:///home/eto1/T%C3%A9l%C3%A9chargements/Maria-STD22082-Examen2/pageweb.html"></form>
+    <nav id="formulaire">
+    <img id="user" src="user.png" width="65rem" height="65rem"><br><br>
+  
+    <input name="email" placeholder="E-mail" type="text" id="email" required><br><br>
+
+   <input name="password"  placeholder="Password" type="password" id="password"><br><br>
+
+   <input  class="submit-button" id="inputbutton" type="submit" value="Login" onclick="f_valid()"><br></a>
+   <div id="trois_points" class="snippet" data-title="dot-flashing">
+    
+    <div class="dot-flashing"></div>
+  
+</div>
+
+   <a href=""><p id="signup">Signup</p>
+    <a href=""><p id="forgotpass">Forgot Password?</p></a>
+    <span id="email_manquant"></span><br>
+</nav>
+</form>
+</form>
+<script>
+  input=document.getElementById('inputbutton');
+  input.addEventListener('click',function () {
+    input.style.display='none';
+   setTimeout(() => {
+    input.style.display='block'
+   }, 2000); 
+  })
+
+  div=document.getElementById('trois_points');
+  input.addEventListener('click',function () {
+    div.style.display='block';
+    setTimeout(() => {
+      div.style.display='none'
+    },2000);
+  })
+  
+  span=document.getElementById('email_manquant');
+      span.addEventListener('click',function () {
+        span.style.display='block';
+        setTimeout(() => {
+          span.style.display='none';
+        },2000);
+      })
+</script>
+</body>
+</html>

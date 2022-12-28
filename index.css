@@ -1,0 +1,120 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    animation:backgroundcolor 5s infinite;
+}
+@keyframes backgroundcolor {
+    0%{
+        background-color:#e0c3fc; 
+        left: auto;
+    }
+    50%{
+        background-color:#8ec5fc ;
+        right: auto;
+    }
+    100%{
+        background-color: #e0c3fc;
+        right: auto;
+    }
+}
+
+.text-one{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue ;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: àgauche 2s  linear 0s 1 normal both ; 
+    z-index: 1;
+}
+@keyframes àgauche {
+    0%{
+left: 0;
+    }
+100%{
+left:30%;
+}
+}
+
+.text-two{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue ;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: àdroite 2s  linear 0s 1 normal both ; 
+    z-index: 1;
+}
+@keyframes àdroite {
+    0%{
+right: 0;
+    }
+100%{
+right:30%;
+}
+}
+
+.text-threee{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue ;
+    position: absolute;
+    animation: aucentre 2s  linear 4s 1 normal both ; 
+}
+
+@keyframes aucentre {
+0%{
+    transform: scale(0);
+}
+100%{
+    transform: scale(1);
+}
+}
+
+.bouton{
+    font-size: 25px;
+    margin-top: 3rem;
+        margin-left: 10rem;
+        padding: 0.5rem;
+        border: 1px solid #809ef1e5;
+        border-radius: 30px;
+        background-color: #809ef1e5 !important;
+        color: white;
+}
+    
+    .bouton:hover{  
+        border: 2px solid #809ef1e5;
+        transform: scale(1.2);
+    }
+
+
+
+
+/**1
+
+*{color: #337ab7;}
+
+/**2
+* {
+    -webkit-tap-highlight-color: transparent;
+    color: #2962ff;
+}
+*/
